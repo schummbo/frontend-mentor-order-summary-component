@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+}
+
+main {
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px lightgray;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heroimage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.summarycontainer {
+    padding: 10px 40px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.titlecontainer {
+    text-align: center;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+
+.plancontainer {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+
+.musicicon {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.planname {
+    grid-column: 2;
+    font-weight: 700;
+}
+
+.planprice {
+    grid-column: 2;
+    grid-row: 2;    
+    color: hsl(224, 23%, 55%);
+}
+
+.changelink {
+    grid-column: 3;
+    grid-row: 1/3;
+    align-self: center;
+    font-weight: 700;
+}
+
+.actioncontainer {
+    margin: 20px 0;
+}
+
+.actioncontainer button {
+    width: 100%;
+    border: 0; 
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+}
+
+.confirmbutton {
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 8px 10px 2px lightgray;
+    margin-bottom: 20px;
+}
+
+.cancelbutton {
+    border: none;
+    text-align: center;
+    background: none;    
+    box-shadow: none;   
+    color: hsl(224, 23%, 55%);
+}
