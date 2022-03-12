@@ -6,10 +6,16 @@ body {
     background-image: url('./images/pattern-background-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    min-height: 100vh;
 }
 
 a {
     color: hsl(245, 75%, 52%);
+    transition-property: background-color;
+    transition-duration: .2s;
 }
 
 a:hover {
@@ -18,13 +24,9 @@ a:hover {
 
 main {
     width: 345px;
-    margin: 0 auto;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 10px 20px lightgray;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    box-shadow: 0 1em 2em lightgray;
 }
 
 .heroimage {
@@ -34,7 +36,7 @@ main {
 }
 
 .summarycontainer {
-    padding: 10px 40px;
+    padding: .5rem 1.5rem;
 }
 
 h1 {
@@ -56,7 +58,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .musicicon {
@@ -83,7 +85,7 @@ p {
 }
 
 .actioncontainer {
-    margin: 20px 0;
+    margin: 1.5rem 0;
 }
 
 .actioncontainer button {
@@ -95,12 +97,14 @@ p {
 
 .confirmbutton {
     border-radius: 5px;
-    height: 40px;
+    height: 2.7rem;
     text-align: center;
     background-color: hsl(245, 75%, 52%);
     color: white;
     box-shadow: 0px 8px 10px 2px lightgray;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    transition-property: background-color;
+    transition-duration: .2s;
 }
 
 .confirmbutton:hover {
@@ -113,6 +117,8 @@ p {
     background: none;    
     box-shadow: none;   
     color: hsl(224, 23%, 55%);
+    transition-property: background-color;
+    transition-duration: .2s;
 }
 
 .cancelbutton:hover {
